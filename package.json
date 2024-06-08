@@ -1,11 +1,10 @@
 {
-  "name": "bites",
+  "name": "@bit_by_bit/bites",
   "version": "1.0.0",
   "description": "",
   "main": "dist/bundle.js",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "scripts": {
     "build": "webpack",

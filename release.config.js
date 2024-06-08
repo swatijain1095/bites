@@ -1,4 +1,5 @@
 module.exports = {
+    repositoryUrl: "https://github.com/swatijain1095/bites.git",
     branches: ["main"],
     plugins: [
       "@semantic-release/commit-analyzer",

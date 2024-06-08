@@ -3,11 +3,14 @@
   "version": "1.0.1",
   "description": "",
   "main": "dist/bundle.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "webpack --mode=production",
+    "build:webpack": "webpack --mode=production",
+    "build:ts": "tsc",
+    "build": "npm run build:ts && npm run build:webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"

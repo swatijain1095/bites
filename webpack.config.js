@@ -5,6 +5,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    library: {
+      name: 'bites',
+      type: 'umd',
+    },
+    globalObject: 'this',
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -22,6 +27,10 @@ module.exports = {
         exclude: /node_modules/,
       },
     ],
+  },
+  externals: {
+    react: 'react',
+    'react-dom': 'react-dom',
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

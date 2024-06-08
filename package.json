@@ -2,8 +2,13 @@
   "name": "bites",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -27,6 +32,7 @@
     "@storybook/addon-onboarding": "^8.1.6",
     "@storybook/addon-webpack5-compiler-swc": "^1.0.3",
     "@storybook/blocks": "^8.1.6",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^8.1.6",
     "@storybook/react-webpack5": "^8.1.6",
     "@storybook/test": "^8.1.6",

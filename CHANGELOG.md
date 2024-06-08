@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/swatijain1095/bites/compare/v1.0.2...v1.0.3) (2024-06-08)
+
+
+### Bug Fixes
+
+* Updated webpack config to module exports ([e17ea5a](https://github.com/swatijain1095/bites/commit/e17ea5a3d4a2b26f36e0c2f1e382ea31577633b3))
+
 ## [1.0.2](https://github.com/swatijain1095/bites/compare/v1.0.1...v1.0.2) (2024-06-08)
 
 

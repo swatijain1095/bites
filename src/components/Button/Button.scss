@@ -5,6 +5,8 @@
   width: 106px;
   height: 36px;
   font-size: $text-md;
+  background-color: $primary-color;
+  color: $white;
   border-radius: 8px;
   border: none;
 
@@ -31,8 +33,20 @@
     height: 60px;
   }
 
-  &--primary {
-    background-color: $primary-color;
-    color: $white;
+  &--secondary {
+    background-color: $secondary-color;
+    color: $brand-700;
+  }
+
+  &--success {
+    background-color: $success-color;
+  }
+
+  &--error {
+    background-color: $error-color;
+  }
+
+  &--warning {
+    background-color: $warning-color;
   }
 }

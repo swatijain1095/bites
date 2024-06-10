@@ -1,14 +1,38 @@
 @import '../../styles/variables';
 
-.btn {
-    background-color: $primary--color;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    &:hover {
-      background-color: darken($primary--color, 10%);
-      box-shadow: $shadow--lg;
-    }
+.comp-button {
+  padding: 0px;
+  width: 106px;
+  height: 36px;
+  font-size: $text-md;
+  border-radius: 8px;
+  border: none;
+
+  // Sizes
+  &--sm {
+    font-size: $text-sm;
   }
-  
+
+  &--lg {
+    font-size: $text-lg;
+    width: 125px;
+    height: 44px;
+  }
+
+  &--xl {
+    font-size: $text-xl;
+    width: 129px;
+    height: 48px;
+  }
+
+  &--2xl {
+    font-size: $text-xxl;
+    width: 156px;
+    height: 60px;
+  }
+
+  &--primary {
+    background-color: $primary-color;
+    color: $white;
+  }
+}

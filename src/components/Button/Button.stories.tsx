@@ -10,9 +10,15 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
+export const Default: Story = {
     args: {
-        label: 'Button',
-        onClick: () => alert('Button Clicked !')
+        children: 'Button',
+        size: 'md',
+    },
+    argTypes: {
+        size: {
+            options: ['sm', 'md', 'lg', 'xl', '2xl'],
+            control: { type: 'select' },
+        }
     }
-}
+};

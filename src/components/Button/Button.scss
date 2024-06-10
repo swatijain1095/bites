@@ -10,6 +10,10 @@
   border-radius: 8px;
   border: none;
 
+  &:hover {
+    background-color: $brand-700;
+  }
+
   // Sizes
   &--sm {
     font-size: $text-sm;
@@ -33,20 +37,37 @@
     height: 60px;
   }
 
+  // States
   &--secondary {
     background-color: $secondary-color;
     color: $brand-700;
+
+    &:hover {
+      background-color: $brand-100;
+    }
   }
 
   &--success {
     background-color: $success-color;
+
+    &:hover {
+      background-color: $success-700;
+    }
   }
 
   &--error {
     background-color: $error-color;
+
+    &:hover {
+      background-color: $error-700;
+    }
   }
 
   &--warning {
     background-color: $warning-color;
+
+    &:hover {
+      background-color: $warning-700;
+    }
   }
 }

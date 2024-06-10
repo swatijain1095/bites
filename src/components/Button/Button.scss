@@ -12,6 +12,12 @@
 
   &:hover {
     background-color: $brand-700;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:active {
+    outline: 3px solid $brand-300;
   }
 
   // Sizes
@@ -45,6 +51,11 @@
     &:hover {
       background-color: $brand-100;
     }
+
+    &:focus,
+    &:active {
+      outline: 3px solid $brand-300;
+    }
   }
 
   &--success {
@@ -52,6 +63,11 @@
 
     &:hover {
       background-color: $success-700;
+    }
+
+    &:focus,
+    &:active {
+      outline: 3px solid $success-300;
     }
   }
 
@@ -61,6 +77,11 @@
     &:hover {
       background-color: $error-700;
     }
+
+    &:focus,
+    &:active {
+      outline: 3px solid $error-300;
+    }
   }
 
   &--warning {
@@ -68,6 +89,11 @@
 
     &:hover {
       background-color: $warning-700;
+    }
+
+    &:focus,
+    &:active {
+      outline: 3px solid $warning-300;
     }
   }
 }

@@ -1,16 +1,25 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
+
+@mixin button-disabled($disabled-background: #ddd) {
+  background-color: $disabled-background;
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: not-allowed;
+    outline: 0;
+    background-color: $disabled-background;
+  }
+}
 
 .comp-button {
   padding: 0px;
-  width: 106px;
   height: 36px;
+  padding: 5px 14px;
   font-size: $text-md;
   background-color: $primary-color;
   color: $white;
   border-radius: 8px;
   border: none;
-
-  // need to fix: use padding instead of fixed width
 
   &:hover {
     background-color: $brand-700;
@@ -22,27 +31,33 @@
     outline: 3px solid $brand-300;
   }
 
+  &--disabled {
+    @include button-disabled($brand-200);
+  }
+
   // Sizes
   &--sm {
     font-size: $text-sm;
+    height: 32px;
+    padding: 5px 10px;
   }
 
   &--lg {
     font-size: $text-lg;
-    width: 125px;
-    height: 44px;
+    height: 40px;
+    padding: 5px 18px;
   }
 
   &--xl {
     font-size: $text-xl;
-    width: 129px;
-    height: 48px;
+    height: 44px;
+    padding: 5px 22px;
   }
 
   &--2xl {
     font-size: $text-xxl;
-    width: 156px;
-    height: 60px;
+    padding: 5px 28px;
+    height: 52px;
   }
 
   // States
@@ -60,6 +75,11 @@
     }
   }
 
+  &--secondary.comp-button--disabled {
+    @include button-disabled($brand-25);
+    color: $brand-300;
+  }
+
   &--success {
     background-color: $success-color;
 
@@ -73,6 +93,15 @@
     }
   }
 
+  &--success.comp-button--disabled {
+    @include button-disabled($success-200);
+  }
+
+  // create a mixin for styles that will be there in disabled modifier.
+  // you only need color that will be based on the state of the component
+  // mixin should accept color prop, this way you can just use one definition
+  // call mixin using include syntax passing your theme based color for every instance
+
   &--error {
     background-color: $error-color;
 
@@ -84,6 +113,9 @@
     &:active {
       outline: 3px solid $error-300;
     }
+  }
+  &--error.comp-button--disabled {
+    @include button-disabled($error-200);
   }
 
   &--warning {
@@ -97,6 +129,10 @@
     &:active {
       outline: 3px solid $warning-300;
     }
+  }
+
+  &--warning.comp-button--disabled {
+    @include button-disabled($warning-200);
   }
 
   &--only-icon {

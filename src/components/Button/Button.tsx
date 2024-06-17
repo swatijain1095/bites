@@ -1,26 +1,35 @@
-import React, { Children } from 'react';
-import './Button.scss';
-import classNames from 'classnames';
+import React, { Children } from "react";
+import "./Button.scss";
+import classNames from "classnames";
 
-type State = 'primary' | 'secondary' | 'success' | 'error' | 'warning';
-type Variant = 'link' | 'left-icon' | 'right-icon' | 'only-icon';
-type Size = 'sm' | 'md' | 'lg' | 'xl' | '2xl';
+type State = "primary" | "secondary" | "success" | "error" | "warning" | "link";
+type Size = "sm" | "md" | "lg" | "xl" | "2xl";
+type Disabled = boolean | undefined;
 
-interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+interface ButtonProps
+  extends React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
   state?: State;
-  variant?: Variant;
   size?: Size;
+  disabled?: Disabled;
   children: JSX.Element | string;
 }
 
-const Button: React.FC<ButtonProps> = ({ state = 'primary', size = 'md', variant, children, ...props }) => {
-
+const Button: React.FC<ButtonProps> = ({
+  state = "primary",
+  size = "md",
+  children,
+  disabled,
+  ...props
+}) => {
   const className = classNames(
-    'comp-button',
+    "comp-button",
     state && `comp-button--${state}`,
-    variant && `comp-button--${variant}`,
-    size && `comp-button--${size}`
-  )
+    size && `comp-button--${size}`,
+    disabled && "comp-button--disabled"
+  );
 
   return (
     <button className={className} {...props}>

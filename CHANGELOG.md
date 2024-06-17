@@ -1,3 +1,15 @@
+## [1.0.4](https://github.com/swatijain1095/bites/compare/v1.0.3...v1.0.4) (2024-06-17)
+
+
+### Bug Fixes
+
+* Added active and focus states on button ([f223fef](https://github.com/swatijain1095/bites/commit/f223fefaae778d72855ef61be8b8d976612c6e0a))
+* Added correct initial styles to button, added different sizes ([3036b65](https://github.com/swatijain1095/bites/commit/3036b6519a697f8bc584f858aa3a90be447d7fcf))
+* Added hover state ([160574b](https://github.com/swatijain1095/bites/commit/160574b5e58c9db9df56b61a717097768802736b))
+* Added react-icons package, added todo comments for future improvements ([1c3750e](https://github.com/swatijain1095/bites/commit/1c3750e54be310165b5b9b0e75ada53e3afa479d))
+* Added some universal scss variables ([2b37e8c](https://github.com/swatijain1095/bites/commit/2b37e8c9bc3cc8c562e6e2ab074aebf950f42994))
+* Added state styles for button ([e387854](https://github.com/swatijain1095/bites/commit/e387854d9b9aefb7d0f93acbf5d9ca9fa3bc78b9))
+
 ## [1.0.3](https://github.com/swatijain1095/bites/compare/v1.0.2...v1.0.3) (2024-06-08)
 
 

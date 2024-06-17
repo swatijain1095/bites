@@ -10,6 +10,8 @@
   border-radius: 8px;
   border: none;
 
+  // need to fix: use padding instead of fixed width
+
   &:hover {
     background-color: $brand-700;
     cursor: pointer;
@@ -95,5 +97,10 @@
     &:active {
       outline: 3px solid $warning-300;
     }
+  }
+
+  &--only-icon {
+    padding: 10px;
+    width: auto;
   }
 }

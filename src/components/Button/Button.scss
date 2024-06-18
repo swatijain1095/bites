@@ -12,7 +12,6 @@
 }
 
 .comp-button {
-  padding: 0px;
   height: 36px;
   padding: 5px 14px;
   font-size: $text-md;
@@ -31,7 +30,7 @@
     outline: 3px solid $brand-300;
   }
 
-  &--disabled {
+  &--primary.comp-button--disabled {
     @include button-disabled($brand-200);
   }
 
@@ -133,6 +132,25 @@
 
   &--warning.comp-button--disabled {
     @include button-disabled($warning-200);
+  }
+
+  &--link {
+    padding: 0;
+    height: 0;
+    color: $brand-700;
+    &:hover {
+      background-color: #ffff;
+      color: $brand-800;
+    }
+
+    &:focus,
+    &:active {
+      color: $brand-700;
+    }
+  }
+  &--link.comp-button--disabled {
+    color: $gray-300;
+    cursor: not-allowed;
   }
 
   &--only-icon {

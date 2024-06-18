@@ -1,3 +1,14 @@
+## [1.0.5](https://github.com/swatijain1095/bites/compare/v1.0.4...v1.0.5) (2024-06-18)
+
+
+### Bug Fixes
+
+* Added disable feature of button and also used padding in place of width ([16853b1](https://github.com/swatijain1095/bites/commit/16853b112930c55b38a8389cf97a22c37a6b2c98))
+* added husky and commit check ([021ce7a](https://github.com/swatijain1095/bites/commit/021ce7a244026e71f291e082d731b6a6c1eadcfa))
+* Added link variant of Button ([77a6cb0](https://github.com/swatijain1095/bites/commit/77a6cb0220c70a1be89c9ef1d2564bded1ebe78c))
+* added rule for body max length ([1ec4915](https://github.com/swatijain1095/bites/commit/1ec4915cec9455505093c1d0f3a176dbaabe075d))
+* Removed disabled modifier classname, using psuedo selector instead ([c91900b](https://github.com/swatijain1095/bites/commit/c91900bef96ec0fb3d3dd5fc33514bbfebe4f354))
+
 ## [1.0.4](https://github.com/swatijain1095/bites/compare/v1.0.3...v1.0.4) (2024-06-17)
 
 

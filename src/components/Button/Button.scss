@@ -30,7 +30,7 @@
     outline: 3px solid $brand-300;
   }
 
-  &--primary.comp-button--disabled {
+  &:disabled {
     @include button-disabled($brand-200);
   }
 
@@ -72,11 +72,10 @@
     &:active {
       outline: 3px solid $brand-300;
     }
-  }
-
-  &--secondary.comp-button--disabled {
-    @include button-disabled($brand-25);
-    color: $brand-300;
+    &:disabled {
+      @include button-disabled($brand-25);
+      color: $brand-300;
+    }
   }
 
   &--success {
@@ -90,10 +89,10 @@
     &:active {
       outline: 3px solid $success-300;
     }
-  }
 
-  &--success.comp-button--disabled {
-    @include button-disabled($success-200);
+    &:disabled {
+      @include button-disabled($success-200);
+    }
   }
 
   &--error {
@@ -107,9 +106,9 @@
     &:active {
       outline: 3px solid $error-300;
     }
-  }
-  &--error.comp-button--disabled {
-    @include button-disabled($error-200);
+    &:disabled {
+      @include button-disabled($error-200);
+    }
   }
 
   &--warning {
@@ -123,10 +122,10 @@
     &:active {
       outline: 3px solid $warning-300;
     }
-  }
 
-  &--warning.comp-button--disabled {
-    @include button-disabled($warning-200);
+    &:disabled {
+      @include button-disabled($warning-200);
+    }
   }
 
   &--link {
@@ -143,15 +142,11 @@
       color: $brand-700;
       outline: none;
     }
-  }
-  &--link.comp-button--disabled {
-    color: $gray-300;
-    cursor: not-allowed;
-    outline: none;
-  }
 
-  &--only-icon {
-    padding: 10px;
-    width: auto;
+    &:disabled {
+      color: $gray-300;
+      cursor: not-allowed;
+      outline: none;
+    }
   }
 }

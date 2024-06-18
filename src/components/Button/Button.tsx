@@ -19,18 +19,16 @@ const Button: React.FC<ButtonProps> = ({
   state = "primary",
   size = "md",
   children,
-  disabled,
   ...rest
 }) => {
   const className = classNames(
     "comp-button",
     state && `comp-button--${state}`,
-    size && `comp-button--${size}`,
-    disabled && "comp-button--disabled"
+    size && `comp-button--${size}`
   );
 
   return (
-    <button className={className} disabled={disabled} {...rest}>
+    <button className={className} {...rest}>
       {children}
     </button>
   );

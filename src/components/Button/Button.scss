@@ -6,7 +6,7 @@
   &:focus,
   &:active {
     cursor: not-allowed;
-    outline: 0;
+    outline: none;
     background-color: $disabled-background;
   }
 }
@@ -96,11 +96,6 @@
     @include button-disabled($success-200);
   }
 
-  // create a mixin for styles that will be there in disabled modifier.
-  // you only need color that will be based on the state of the component
-  // mixin should accept color prop, this way you can just use one definition
-  // call mixin using include syntax passing your theme based color for every instance
-
   &--error {
     background-color: $error-color;
 
@@ -146,11 +141,13 @@
     &:focus,
     &:active {
       color: $brand-700;
+      outline: none;
     }
   }
   &--link.comp-button--disabled {
     color: $gray-300;
     cursor: not-allowed;
+    outline: none;
   }
 
   &--only-icon {

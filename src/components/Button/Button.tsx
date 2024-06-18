@@ -1,10 +1,9 @@
-import React, { Children } from "react";
+import React from "react";
 import "./Button.scss";
 import classNames from "classnames";
 
 type State = "primary" | "secondary" | "success" | "error" | "warning" | "link";
 type Size = "sm" | "md" | "lg" | "xl" | "2xl";
-type Disabled = boolean | undefined;
 
 interface ButtonProps
   extends React.DetailedHTMLProps<
@@ -13,7 +12,6 @@ interface ButtonProps
   > {
   state?: State;
   size?: Size;
-  disabled?: Disabled;
   children: JSX.Element | string;
 }
 
@@ -22,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   size = "md",
   children,
   disabled,
-  ...props
+  ...rest
 }) => {
   const className = classNames(
     "comp-button",
@@ -32,7 +30,7 @@ const Button: React.FC<ButtonProps> = ({
   );
 
   return (
-    <button className={className} {...props}>
+    <button className={className} disabled={disabled} {...rest}>
       {children}
     </button>
   );

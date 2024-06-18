@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/swatijain1095/bites/compare/v1.0.5...v1.0.6) (2024-06-18)
+
+
+### Bug Fixes
+
+* fixed accessibility issue for page component ([f12852d](https://github.com/swatijain1095/bites/commit/f12852d3a1ccb8ae7e91f0b7121cf5d8c7a3357b))
+
 ## [1.0.5](https://github.com/swatijain1095/bites/compare/v1.0.4...v1.0.5) (2024-06-18)
 
 

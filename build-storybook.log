@@ -1,0 +1,31 @@
+
+> @bit_by_bit/bites@1.0.4 build-storybook
+> storybook build --output-dir C:\Users\jains\AppData\Local\Temp\chromatic--22496-810nAwUccLmf
+
+@storybook/cli v8.1.6
+
+info => Cleaning outputDir: ..\..\AppData\Local\Temp\chromatic--22496-810nAwUccLmf
+info => Loading presets
+info => Building manager..
+info => Manager built (527 ms)
+info => Building preview..
+info Addon-docs: using MDX3
+info => Using implicit CSS loaders
+info => Using default Webpack5 setup
+info Using tsconfig paths for react-docgen
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   static/media/addon-library.7a58d2cb.png (456 KiB)
+WARN   797.9615661c.iframe.bundle.js (675 KiB)
+WARN   800.944183e8.iframe.bundle.js (772 KiB)
+WARN   81.7ecf39b4.iframe.bundle.js (938 KiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (951 KiB)
+WARN       runtime~main.0b0162b8.iframe.bundle.js
+WARN       81.7ecf39b4.iframe.bundle.js
+WARN       main.402c1770.iframe.bundle.js
+WARN 
+info => Preview built (38 s)
+info => Output directory: C:\Users\jains\AppData\Local\Temp\chromatic--22496-810nAwUccLmf

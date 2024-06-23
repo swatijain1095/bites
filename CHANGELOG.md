@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/swatijain1095/bites/compare/v1.0.6...v1.0.7) (2024-06-23)
+
+
+### Bug Fixes
+
+* updated packages to their latest version ([e1f5529](https://github.com/swatijain1095/bites/commit/e1f55290897111965948a2c813f23ed4ea652de4))
+
 ## [1.0.6](https://github.com/swatijain1095/bites/compare/v1.0.5...v1.0.6) (2024-06-18)
 
 
